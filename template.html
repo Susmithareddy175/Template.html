@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .header{
+            display:flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        .header>div{
+            font-size:40px;
+            width:100%;
+        
+        }
+        .img_container{
+            width:100vw;
+            display: grid;
+           /* grid-template-columns:1fr 1fr;*/
+           /* grid-template-areas:"img1 img4"
+                                 "img2 img5"
+                                 "img3 img5";*/
+
+            grid-template-columns:1fr 1fr;
+            grid-template-rows:repeat(8,1fr);
+
+        }
+        .img_container img{
+            height:100%;
+            width:100%;
+
+        }
+        
+
+        .img1{
+            /*grid-area:img1;*/
+            grid-row:1/3;
+            grid-column:1/2;
+        }
+        .img2{
+            grid-row:3/6;
+            grid-column:1/2;
+        }
+        .img3{
+            grid-row:6/9;
+            grid-column:1/2;
+        }
+        .img4{
+            grid-row:1/4;
+            grid-column:2/3;
+        }
+        .img5{
+            grid-row:4/9;
+            grid-column:2/3;
+        }
+        .about_container{
+            text-align: center;
+            margin-top:50px;
+        }
+        p{
+            width:50%;
+            margin:auto;
+
+        }
+        input,button{
+            width: 50%;
+            height: 30px;
+            margin: 10px;
+            border-radius:6px;
+        }
+        button{
+            background-color:rgb(37,36,36);
+            color:white;
+        }
+        button:hover{
+            background-color:grey;
+            color:black;
+        }
+
+    </style>
+
+    </head>
+
+    <body>
+        <div class="header">
+            <div class="myart">My Art</div>
+            <div class="about">About</div>
+        </div>
+        <div class="img_container">
+            <div class="img1"><img src="https://www.w3schools.com/w3images/streetart.jpg" alt=""></div>
+            <div class="img2"><img src="https://www.w3schools.com/w3images/streetart3.jpg"alt=""></div>
+            <div class="img3"><img src="https://www.w3schools.com/w3images/streetart2.jpg"alt=""></div>
+            <div class="img4"><img src="https://www.w3schools.com/w3images/streetart4.jpg"alt=""></div>
+            <div class="img5"><img src="https://www.w3schools.com/w3images/streetart5.jpg"alt=""></div>
+           </div>
+           <div class ="about_container">
+            <p>ABOUT</p>
+            <img src="https://www.w3schools.com/w3images/boy.jpg" alt="" height="300px" width="250px">
+            <p>Just me, myself and I, exploring the universe of unknownment. I have a heart of love and an interest of lorem ipsum and mauris neque quam blog. I want to share my world with you. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+            <p style="color:red">Do Not hesitate to call me</p>
+            <label for="NAME">NAME</label> <br>
+            <input type="text"><br>
+            <label for="EMAIL">EMAIL</label> <br>
+            <input type="text"><br>
+            <label for="MESSAGE">MESSAGE</label> <br>
+            <input type="text"><br>
+            <button type="submit">SUBMIT</button>
+
+
+
+        </div>
+            
+        
+
+    </body>
+</html>
